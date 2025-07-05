@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+      IMPORTANT: CHANGE THE TITLE FOR EACH SOLUTION PAGE
+      Example: <title>Private Equity Deal Sourcing | Dealtria</title>
+    -->
+    <title>Solution for Private Equity Firms | Dealtria</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins (Headings) & Lato (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Styles (Same as homepage) -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #F8F9FA; /* Off-white/light grey background */
+            color: #212529; /* Dark charcoal text */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .cta-button {
+            background-color: #2CA58D; /* Vibrant teal accent */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #248B75;
+        }
+        .navy-bg {
+             background-color: #0A2342; /* Deep navy blue */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ======== HEADER & NAVIGATION (Same as homepage) ======== -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-[#0A2342]">Dealtria</a>
+            <div class="hidden lg:flex items-center space-x-8">
+                <div class="group relative">
+                    <button class="text-gray-600 hover:text-[#0A2342] transition-colors flex items-center">
+                        Solutions <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 py-2 w-60 border border-gray-100">
+                        <a href="cfo-accounting.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">For CFOs & Accounting Firms</a>
+                        <a href="private-equity.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">For Private Equity Firms</a>
+                        <a href="ma-advisors.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">For M&A Advisors & Bankers</a>
+                        <a href="corporate-development.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">For Corporate Development</a>
+                    </div>
+                </div>
+                <a href="process.html" class="text-gray-600 hover:text-[#0A2342] transition-colors">How It Works</a>
+                <a href="contact.html" class="text-gray-600 hover:text-[#0A2342] transition-colors">Contact</a>
+            </div>
+            <a href="contact.html" class="hidden lg:inline-block cta-button px-5 py-2 rounded-lg font-bold">Book a Call</a>
+            <button id="mobile-menu-button" class="lg:hidden">
+                <i data-lucide="menu" class="text-[#0A2342]"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
+            <a href="cfo-accounting.html" class="block py-2 text-gray-600 hover:text-[#0A2342]">For CFOs & Accounting</a>
+            <a href="private-equity.html" class="block py-2 text-gray-600 hover:text-[#0A2342]">For Private Equity</a>
+            <a href="ma-advisors.html" class="block py-2 text-gray-600 hover:text-[#0A2342]">For M&A Advisors</a>
+            <a href="corporate-development.html" class="block py-2 text-gray-600 hover:text-[#0A2342]">For Corporate Development</a>
+            <a href="process.html" class="block py-2 text-gray-600 hover:text-[#0A2342]">How It Works</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-[#0A2342]">Contact</a>
+            <a href="contact.html" class="block mt-4 cta-button text-center px-5 py-2 rounded-lg font-bold">Book a Call</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 
+          =================================================
+          SOLUTION PAGE CONTENT STARTS HERE
+          - Change the content in this section for each solution
+          - The example below is for "Private Equity Firms"
+          =================================================
+        -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <!-- Main Heading and Subheading -->
+                <div class="text-left max-w-4xl">
+                    <p class="font-bold text-[#2CA58D]">FOR PRIVATE EQUITY FIRMS</p>
+                    <h1 class="mt-2 text-5xl font-bold text-[#0A2342]">Be first to every proprietary deal.</h1>
+                    <p class="mt-4 text-xl text-gray-600">Proprietary sourcing is expensive. Internal BDOs waste over half their time on unqualified lists. We find the off-market deals your competition will miss.</p>
+                </div>
+
+                <!-- Value Pillars -->
+                <div class="mt-16 grid md:grid-cols-3 gap-12">
+                    <div class="pillar">
+                        <i data-lucide="map" class="w-12 h-12 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-2xl font-bold">Thesis-Driven Market Maps</h3>
+                        <p class="mt-2 text-gray-600">Get comprehensive market maps targeting your exact investment criteria, delivered in under 30 days.</p>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="phone-call" class="w-12 h-12 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-2xl font-bold">Senior-Level Outreach</h3>
+                        <p class="mt-2 text-gray-600">We engage owners directly via phone, email, and LinkedIn with a message that resonates.</p>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="file-check-2" class="w-12 h-12 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-2xl font-bold">Qualified Deal Handoff</h3>
+                        <p class="mt-2 text-gray-600">You only speak with interested, pre-qualified decision-makers who are ready for a serious conversation.</p>
+                    </div>
+                </div>
+
+                <!-- Social Proof / Quote -->
+                <div class="mt-16 bg-teal-50 border-l-4 border-[#2CA58D] p-8 rounded-r-lg max-w-4xl">
+                    <p class="text-2xl italic text-gray-800">"Our process helped clients complete over 1,000 buy-side deals, a scale investors expect."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image or Feature Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <img src="https://placehold.co/1200x500/e0e7ff/0a2342?text=Data-Driven+Sourcing" alt="Data-driven sourcing dashboard" class="rounded-xl shadow-lg">
+            </div>
+        </section>
+
+        <!-- FINAL CTA SECTION (Same as homepage CTA) -->
+        <section id="contact-cta" class="py-20 navy-bg">
+            <div class="container mx-auto px-6 text-center text-white">
+                <h2 class="text-4xl font-bold">Ready to claim your sector deep-dive?</h2>
+                <p class="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">Let's find the off-market opportunities you're missing. A more efficient quarter starts today.</p>
+                <div class="mt-8">
+                    <a href="contact.html" class="cta-button px-8 py-3 rounded-lg font-bold text-lg">Book a No-Obligation Call</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== FOOTER (Same as homepage) ======== -->
+    <footer class="bg-[#0A2342] text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <a href="index.html" class="text-2xl font-bold">Dealtria</a>
+            <p class="mt-2 text-gray-400">&copy; 2024 Dealtria. All Rights Reserved.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
