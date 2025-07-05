@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealtria | Proprietary Deal Flow, On Demand</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins (Headings) & Lato (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #F8F9FA; /* Off-white/light grey background */
+            color: #212529; /* Dark charcoal text */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .cta-button {
+            background-color: #2CA58D; /* Vibrant teal accent */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #248B75;
+        }
+        .cta-button-secondary {
+            background-color: transparent;
+            color: #0A2342; /* Deep navy blue */
+            border: 1px solid #0A2342;
+            transition: all 0.3s ease;
+        }
+        .cta-button-secondary:hover {
+            background-color: #0A2342;
+            color: white;
+        }
+        .navy-bg {
+             background-color: #0A2342; /* Deep navy blue */
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #F8F9FA 0%, #E0E7FF 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ======== HEADER & NAVIGATION ======== -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-[#0A2342]">Dealtria</a>
+            <ul class="hidden lg:flex items-center space-x-8">
+                <li><a href="#solutions" class="text-gray-600 hover:text-[#0A2342] transition-colors">Solutions</a></li>
+                <li><a href="#process" class="text-gray-600 hover:text-[#0A2342] transition-colors">How It Works</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-[#0A2342] transition-colors">Contact</a></li>
+            </ul>
+            <a href="#contact" class="hidden lg:inline-block cta-button px-5 py-2 rounded-lg font-bold">Book a Call</a>
+            <button id="mobile-menu-button" class="lg:hidden">
+                <i data-lucide="menu" class="text-[#0A2342]"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
+            <a href="#solutions" class="block py-2 text-gray-600 hover:text-[#0A2342]">Solutions</a>
+            <a href="#process" class="block py-2 text-gray-600 hover:text-[#0A2342]">How It Works</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-[#0A2342]">Contact</a>
+            <a href="#contact" class="block mt-4 cta-button text-center px-5 py-2 rounded-lg font-bold">Book a Call</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ======== HERO SECTION ======== -->
+        <section class="hero-gradient py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-[#0A2342] leading-tight">Stop chasing. Start closing.</h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">Dealtria fills your pipeline with warm, owner-exclusive conversations—so you can focus on what you do best.</p>
+                <div class="mt-8 flex justify-center items-center space-x-4">
+                    <a href="#contact" class="cta-button px-8 py-3 rounded-lg font-bold text-lg">Get Your Pipeline Forecast</a>
+                    <a href="#process" class="cta-button-secondary px-8 py-3 rounded-lg font-bold text-lg">See How It Works</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== SOCIAL PROOF: LOGO BAR ======== -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-6">
+                <p class="text-center text-sm font-bold text-gray-500 uppercase tracking-widest">Powering Growth for Leaders in Finance and M&A</p>
+                <div class="mt-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center opacity-60">
+                    <img src="https://placehold.co/200x60/f0f0f0/a0a0a0?text=FORBES" alt="Forbes Logo" class="mx-auto">
+                    <img src="https://placehold.co/200x60/f0f0f0/a0a0a0?text=TechCrunch" alt="TechCrunch Logo" class="mx-auto">
+                    <img src="https://placehold.co/200x60/f0f0f0/a0a0a0?text=Bain+Capital" alt="Bain Capital Logo" class="mx-auto">
+                    <img src="https://placehold.co/200x60/f0f0f0/a0a0a0?text=Goldman+Sachs" alt="Goldman Sachs Logo" class="mx-auto">
+                    <img src="https://placehold.co/200x60/f0f0f0/a0a0a0?text=Deloitte" alt="Deloitte Logo" class="mx-auto col-span-2 md:col-span-1">
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== WHO WE HELP (Solutions Section) ======== -->
+        <section id="solutions" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-[#0A2342]">A Solution for Every Stage of the Deal</h2>
+                    <p class="mt-3 text-lg text-gray-600">We provide tailored deal origination for the industry's top performers.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1: CFOs -->
+                    <a href="#cfo" class="block bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <i data-lucide="briefcase" class="w-12 h-12 text-[#2CA58D]"></i>
+                        <h3 class="mt-4 text-xl font-bold text-[#0A2342]">CFOs & Accounting Firms</h3>
+                        <p class="mt-2 text-gray-600">Win bigger mandates without adding a sales desk.</p>
+                        <span class="mt-4 inline-block font-bold text-[#2CA58D]">Learn More &rarr;</span>
+                    </a>
+                    <!-- Card 2: PE -->
+                    <a href="#pe" class="block bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <i data-lucide="trending-up" class="w-12 h-12 text-[#2CA58D]"></i>
+                        <h3 class="mt-4 text-xl font-bold text-[#0A2342]">Private Equity Firms</h3>
+                        <p class="mt-2 text-gray-600">Be first to every proprietary deal.</p>
+                        <span class="mt-4 inline-block font-bold text-[#2CA58D]">Learn More &rarr;</span>
+                    </a>
+                    <!-- Card 3: M&A -->
+                    <a href="#ma" class="block bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <i data-lucide="handshake" class="w-12 h-12 text-[#2CA58D]"></i>
+                        <h3 class="mt-4 text-xl font-bold text-[#0A2342]">M&A Advisors & Bankers</h3>
+                        <p class="mt-2 text-gray-600">Close more deals with institutional-grade pipeline.</p>
+                        <span class="mt-4 inline-block font-bold text-[#2CA58D]">Learn More &rarr;</span>
+                    </a>
+                    <!-- Card 4: Corp Dev -->
+                    <a href="#corp-dev" class="block bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <i data-lucide="target" class="w-12 h-12 text-[#2CA58D]"></i>
+                        <h3 class="mt-4 text-xl font-bold text-[#0A2342]">Corporate Development</h3>
+                        <p class="mt-2 text-gray-600">Meet your strategic growth targets, faster.</p>
+                        <span class="mt-4 inline-block font-bold text-[#2CA58D]">Learn More &rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ======== DETAILED SOLUTION SECTIONS ======== -->
+        
+        <!-- Solution 1: CFOs & Accounting Firms -->
+        <section id="cfo" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-left max-w-4xl">
+                    <p class="font-bold text-[#2CA58D]">FOR CFOs & ACCOUNTING FIRMS</p>
+                    <h2 class="mt-2 text-4xl font-bold text-[#0A2342]">Win bigger mandates without adding a sales desk.</h2>
+                    <p class="mt-4 text-lg text-gray-600">Fractional CFO and CAS firms rely on referrals. Growth stalls when founding partners max out their networks. We provide the pipeline you need to scale predictably.</p>
+                </div>
+                <div class="mt-12 grid md:grid-cols-3 gap-8">
+                    <div class="pillar">
+                        <i data-lucide="list-checks" class="w-10 h-10 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-xl font-bold">Predictable Shortlists</h3>
+                        <p class="mt-2 text-gray-600">Receive a curated list of PE-backed prospects in your niche, ready for outreach.</p>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="user-check" class="w-10 h-10 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-xl font-bold">Partner-Level Intros</h3>
+                        <p class="mt-2 text-gray-600">We use a partner-level voice to make warm introductions that get responses.</p>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="bar-chart-3" class="w-10 h-10 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-xl font-bold">Trackable ROI</h3>
+                        <p class="mt-2 text-gray-600">Our dashboard gives you a clear view of your pipeline, activities, and return on investment.</p>
+                    </div>
+                </div>
+                <div class="mt-12 bg-teal-50 border-l-4 border-[#2CA58D] p-6 rounded-r-lg">
+                    <p class="text-xl italic text-gray-800">"We generated 18 new discovery calls in 90 days for a 12-person CAS firm."</p>
+                </div>
+                <div class="mt-12">
+                     <a href="#contact" class="cta-button px-8 py-3 rounded-lg font-bold text-lg">See Your Pipeline Forecast</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution 2: Private Equity Firms -->
+        <section id="pe" class="py-20">
+            <div class="container mx-auto px-6">
+                 <div class="text-left max-w-4xl">
+                    <p class="font-bold text-[#2CA58D]">FOR PRIVATE EQUITY FIRMS</p>
+                    <h2 class="mt-2 text-4xl font-bold text-[#0A2342]">Be first to every proprietary deal.</h2>
+                    <p class="mt-4 text-lg text-gray-600">Proprietary sourcing is expensive. Internal BDOs waste over half their time on unqualified lists. We find the off-market deals your competition will miss.</p>
+                </div>
+                <div class="mt-12 grid md:grid-cols-3 gap-8">
+                    <div class="pillar">
+                        <i data-lucide="map" class="w-10 h-10 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-xl font-bold">Thesis-Driven Market Maps</h3>
+                        <p class="mt-2 text-gray-600">Get comprehensive market maps targeting your exact investment criteria, delivered in under 30 days.</p>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="phone-call" class="w-10 h-10 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-xl font-bold">Senior-Level Outreach</h3>
+                        <p class="mt-2 text-gray-600">We engage owners directly via phone, email, and LinkedIn with a message that resonates.</p>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="file-check-2" class="w-10 h-10 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-xl font-bold">Qualified Deal Handoff</h3>
+                        <p class="mt-2 text-gray-600">You only speak with interested, pre-qualified decision-makers who are ready for a serious conversation.</p>
+                    </div>
+                </div>
+                <div class="mt-12 bg-teal-50 border-l-4 border-[#2CA58D] p-6 rounded-r-lg">
+                    <p class="text-xl italic text-gray-800">"Our process helped clients complete over 1,000 buy-side deals, a scale investors expect."</p>
+                </div>
+                 <div class="mt-12">
+                     <a href="#contact" class="cta-button px-8 py-3 rounded-lg font-bold text-lg">Claim Your Sector Deep-Dive</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution 3: M&A Advisors & Bankers -->
+        <section id="ma" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                 <div class="text-left max-w-4xl">
+                    <p class="font-bold text-[#2CA58D]">FOR M&A ADVISORS, BANKERS & BROKERS</p>
+                    <h2 class="mt-2 text-4xl font-bold text-[#0A2342]">Close more deals with institutional-grade pipeline.</h2>
+                    <p class="mt-4 text-lg text-gray-600">Juggling active deals and marketing causes outreach to fall through the cracks, wasting valuable associate hours. We build your pipeline so you can focus on closing.</p>
+                </div>
+                <div class="mt-12 grid md:grid-cols-3 gap-8">
+                    <div class="pillar">
+                        <i data-lucide="filter" class="w-10 h-10 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-xl font-bold">Hyper-Targeted Lists</h3>
+                        <p class="mt-2 text-gray-600">Access geo-filtered and trigger-event screened lists of qualified SMB and founder-led companies.</p>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="mail-check" class="w-10 h-10 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-xl font-bold">Done-For-You Outreach</h3>
+                        <p class="mt-2 text-gray-600">Benefit from personalized, multi-channel outreach that secures calendar-ready valuation calls.</p>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="database-zap" class="w-10 h-10 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-xl font-bold">Seamless CRM Sync</h3>
+                        <p class="mt-2 text-gray-600">Integrate seamlessly with your existing CRM (DealCloud, Affinity, Salesforce) for a unified workflow.</p>
+                    </div>
+                </div>
+                <div class="mt-12 bg-teal-50 border-l-4 border-[#2CA58D] p-6 rounded-r-lg">
+                    <p class="text-xl italic text-gray-800">"Our team created a $50M+ transaction pipeline for a sector-focused banking client in just 90 days."</p>
+                </div>
+                 <div class="mt-12">
+                     <a href="#contact" class="cta-button px-8 py-3 rounded-lg font-bold text-lg">Map Out Your Next Mandate</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution 4: Corporate Development Teams -->
+        <section id="corp-dev" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-left max-w-4xl">
+                    <p class="font-bold text-[#2CA58D]">FOR CORPORATE DEVELOPMENT TEAMS</p>
+                    <h2 class="mt-2 text-4xl font-bold text-[#0A2342]">Meet your strategic growth targets, faster.</h2>
+                    <p class="mt-4 text-lg text-gray-600">Internal teams are under pressure to find strategic acquisitions but are often bogged down by manual research. We act as a scalable extension of your team to accelerate inorganic growth.</p>
+                </div>
+                <div class="mt-12 grid md:grid-cols-3 gap-8">
+                    <div class="pillar">
+                        <i data-lucide="locate-fixed" class="w-10 h-10 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-xl font-bold">Strategic Target ID</h3>
+                        <p class="mt-2 text-gray-600">Identify off-market targets that align perfectly with your strategic initiatives and acquisition criteria.</p>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="file-text" class="w-10 h-10 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-xl font-bold">Detailed Dossiers</h3>
+                        <p class="mt-2 text-gray-600">Receive detailed reports on targets, including verified contact info for key decision-makers.</p>
+                    </div>
+                    <div class="pillar">
+                        <i data-lucide="users-2" class="w-10 h-10 text-[#0A2342]"></i>
+                        <h3 class="mt-4 text-xl font-bold">Scalable Extension</h3>
+                        <p class="mt-2 text-gray-600">Accelerate your inorganic growth without adding headcount by leveraging our expert team.</p>
+                    </div>
+                </div>
+                <div class="mt-12 bg-teal-50 border-l-4 border-[#2CA58D] p-6 rounded-r-lg">
+                    <p class="text-xl italic text-gray-800">"We helped a strategic acquirer initiate talks with three qualified targets in 60 days, leading to one closed LOI."</p>
+                </div>
+                 <div class="mt-12">
+                     <a href="#contact" class="cta-button px-8 py-3 rounded-lg font-bold text-lg">Request a Sample Target List</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ======== HOW IT WORKS SECTION ======== -->
+        <section id="process" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-[#0A2342]">Human-Backed, AI-Scaled</h2>
+                    <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">Our proprietary process combines expert human strategy with powerful technology to deliver results you can't get anywhere else.</p>
+                </div>
+                <div class="relative">
+                    <!-- The connecting line -->
+                    <div class="hidden md:block absolute top-5 left-1/2 w-px h-full bg-gray-300 -ml-px"></div>
+                    
+                    <!-- Step 1 -->
+                    <div class="md:flex items-center mb-12">
+                        <div class="md:w-1/2 md:pr-12">
+                            <p class="font-bold text-[#2CA58D]">STEP 1</p>
+                            <h3 class="text-2xl font-bold text-[#0A2342] mt-1">Strategy & Mapping</h3>
+                            <p class="text-gray-600 mt-2">We start with a deep dive into your thesis or ideal customer profile. Our team then builds a comprehensive market map of every potential target.</p>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-4 md:mt-0">
+                            <div class="bg-gray-100 p-8 rounded-lg">
+                                <img src="https://placehold.co/500x300/e0e7ff/0a2342?text=Market+Map+Visualization" alt="Market Map" class="rounded-md shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                     <div class="md:flex flex-row-reverse items-center mb-12">
+                        <div class="md:w-1/2 md:pl-12">
+                            <p class="font-bold text-[#2CA58D]">STEP 2</p>
+                            <h3 class="text-2xl font-bold text-[#0A2342] mt-1">Personalized Outreach</h3>
+                            <p class="text-gray-600 mt-2">Our US-based team crafts and executes multi-channel outreach sequences. We sound like you, representing your firm with the professionalism it deserves.</p>
+                        </div>
+                        <div class="md:w-1/2 md:pr-12 mt-4 md:mt-0">
+                            <div class="bg-gray-100 p-8 rounded-lg">
+                                <img src="https://placehold.co/500x300/e0e7ff/0a2342?text=Outreach+Dashboard" alt="Outreach Dashboard" class="rounded-md shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 md:pr-12">
+                            <p class="font-bold text-[#2CA58D]">STEP 3</p>
+                            <h3 class="text-2xl font-bold text-[#0A2342] mt-1">Qualified Handoff</h3>
+                            <p class="text-gray-600 mt-2">Once a target is qualified and shows interest, we book the meeting directly on your calendar. You get a full dossier so you're prepared for a productive conversation.</p>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mt-4 md:mt-0">
+                            <div class="bg-gray-100 p-8 rounded-lg">
+                                <img src="https://placehold.co/500x300/e0e7ff/0a2342?text=Calendar+Integration" alt="Calendar Integration" class="rounded-md shadow-lg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== FINAL CTA / CONTACT SECTION ======== -->
+        <section id="contact" class="py-20 navy-bg">
+            <div class="container mx-auto px-6">
+                <div class="bg-white rounded-xl shadow-2xl p-8 md:p-12 lg:flex items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-4xl font-bold text-[#0A2342]">Ready to build a predictable pipeline?</h2>
+                        <p class="mt-4 text-lg text-gray-600">Let's find the off-market opportunities you're missing. Fill out the form or book a call directly. A more efficient Q4 starts today.</p>
+                        <div class="mt-6 space-y-4">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-[#2CA58D]"></i>
+                                <span class="text-gray-700">No obligation, just strategy.</span>
+                            </div>
+                             <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-[#2CA58D]"></i>
+                                <span class="text-gray-700">Customized to your exact thesis.</span>
+                            </div>
+                             <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-[#2CA58D]"></i>
+                                <span class="text-gray-700">See a sample target list for free.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 mt-8 lg:mt-0">
+                        <form action="#" method="POST" class="space-y-4">
+                            <div>
+                                <label for="name" class="sr-only">Full Name</label>
+                                <input type="text" name="name" id="name" placeholder="Full Name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2CA58D]">
+                            </div>
+                             <div>
+                                <label for="email" class="sr-only">Work Email</label>
+                                <input type="email" name="email" id="email" placeholder="Work Email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2CA58D]">
+                            </div>
+                             <div>
+                                <label for="company" class="sr-only">Company</label>
+                                <input type="text" name="company" id="company" placeholder="Company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2CA58D]">
+                            </div>
+                             <div>
+                                <label for="iam" class="sr-only">I am a...</label>
+                                <select name="iam" id="iam" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#2CA58D] text-gray-500">
+                                    <option>I am a...</option>
+                                    <option>CFO / Accounting Professional</option>
+                                    <option>Private Equity Investor</option>
+                                    <option>M&A Advisor / Banker</option>
+                                    <option>Corporate Development Professional</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="w-full cta-button px-8 py-3 rounded-lg font-bold text-lg">Request a Call</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== FOOTER ======== -->
+    <footer class="bg-[#0A2342] text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="text-2xl font-bold">Dealtria</p>
+            <p class="mt-2 text-gray-400">&copy; 2024 Dealtria. All Rights Reserved.</p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white"><i data-lucide="linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
